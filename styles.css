@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10%;
+  margin-bottom: 5%;
+}
+#load-more {
+  border: 1px #373299 solid;
+  font-family: "Roboto";
+  font-weight: 400;
+  background-color: white;
+  color: #373299;
+  padding: 5px 40px;
+  border-radius: 9px;
+  font-size: 1em;
+}
+
+.search-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+#search-btn {
+  border: 1px #373299 solid;
+  font-family: "Roboto";
+  font-weight: 400;
+  background-color: white;
+  color: #373299;
+  padding: 5px 40px;
+  border-radius: 9px;
+  font-size: 1em;
+}
+
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  gap: 2%;
+  list-style: none;
+  width: 90%;
+  height: 90%;
+  margin-bottom: 3%;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+.id-span {
+  color: #373299;
+  align-self: flex-start;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1em;
+}
+.poke-name {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #373299;
+  margin-top: 5%;
+  font-size: 1em;
+}
+
+li {
+  width: 20%;
+  height: 30%;
+  padding: 2%;
+  background-color: #f7f7f9;
+  margin-top: 2%;
+  border-radius: 9px;
+  box-shadow: 1px 1px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
