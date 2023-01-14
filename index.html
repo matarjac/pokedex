@@ -18,9 +18,16 @@
     </style>
   </head>
   <body>
+    <nav>
+      <img src="Assets/logo.png" id="logo" alt="" />
+      <div id="links-div">
+        <a href="#">Home</a>
+        <a href="favorites.html">Favorites</a>
+      </div>
+    </nav>
     <div class="page">
       <div class="search-section">
-        <input type="text" />
+        <input id="search-input" type="text" />
         <button id="search-btn">Search</button>
       </div>
       <div class="gallery-section">
@@ -28,6 +35,39 @@
       </div>
       <div>
         <button id="load-more">Load more...</button>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-card">
+          <div class="pokemon-details">
+            <span id="modal-id"></span>
+            <img
+              id="modal-img"
+              src="https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/004.png"
+              alt=""
+            />
+            <span id="modal-name"></span>
+            <div id="types">
+              <ul id="types-list"></ul>
+            </div>
+          </div>
+          <hr />
+          <div id="desc">
+            <h3 class="heading">Description</h3>
+            <p id="pokemon-description"></p>
+            <h3 class="heading">Stats</h3>
+            <div id="stats-div">
+              <span id="hp-attack-defender"></span>
+              <span id="special-speed"></span>
+              <span id="total"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="main.js"></script>

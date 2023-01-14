@@ -2,9 +2,49 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto";
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: #373299;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  height: 100%;
+  width: 76%;
+  background-color: #373299;
+  color: white;
+  font-family: "Roboto";
+  padding: 10%;
+}
+
+a:hover {
+  background-color: #94d97e;
+  color: #373299;
+}
+
+#logo {
+  margin-left: 7%;
+  margin-bottom: 1%;
+  height: 2%;
+  width: 8%;
+}
+
+#links-div {
+  margin-right: 7%;
+  display: flex;
+  gap: 3%;
+}
 
 .page {
-  margin-top: 5%;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,16 +66,23 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 5%;
+  gap: 2%;
+}
+
+#search-input {
+  width: 20%;
+  border: 1px solid #02016680;
+  background-color: #f7f7f9;
+  border-radius: 9px;
 }
 
 #search-btn {
   border: 1px #373299 solid;
   font-family: "Roboto";
   font-weight: 400;
-  background-color: white;
-  color: #373299;
-  padding: 5px 40px;
+  background-color: #373299;
+  color: white;
+  padding: 5px 20px;
   border-radius: 9px;
   font-size: 1em;
 }
@@ -79,7 +126,7 @@ img {
 
 li {
   width: 20%;
-  height: 30%;
+  height: 40%;
   padding: 2%;
   background-color: #f7f7f9;
   margin-top: 2%;
@@ -88,4 +135,186 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+/* Modal styles */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #f7f7f9;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 40px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 9px;
+  box-shadow: 1px 1px 5px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-card {
+  display: flex;
+}
+
+.pokemon-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  gap: 5%;
+}
+
+#modal-id {
+  align-self: flex-start;
+  color: #373299;
+  font-size: 18px;
+}
+
+#desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  margin-top: 2%;
+}
+
+.heading {
+  color: #373299;
+}
+
+#types-list {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  align-content: center;
+}
+
+#modal-name {
+  color: #373299;
+  font-size: 1.3em;
+}
+
+#modal-img {
+  width: 40%;
+  height: 40%;
+}
+
+#types-list li {
+  list-style: none;
+  /* background-color: #94d97e; */
+  width: 4em;
+  height: 2em;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin-left: 10%;
+}
+hr {
+  margin: 2%;
+}
+
+#stats-div {
+  /* margin-top: 2%; */
+  display: flex;
+  gap: 10%;
+}
+
+#pokemon-description {
+  width: 70%;
+}
+
+/* Types styles */
+
+.Normal {
+  background-color: #a8a77a;
+}
+.Fire {
+  background-color: #ee8130;
+}
+.Water {
+  background-color: #6390f0;
+}
+.Electric {
+  background-color: #f7d02c;
+}
+
+.Grass {
+  background-color: #7ac74c;
+}
+
+.Ice {
+  background-color: #96d9d6;
+}
+
+.Fighting {
+  background-color: #c22e28;
+}
+
+.Poison {
+  background-color: #a33ea1;
+}
+
+.Ground {
+  background-color: #e2bf65;
+}
+
+.Flying {
+  background-color: #a98ff3;
+}
+
+.Psychic {
+  background-color: #f95587;
+}
+
+.Bug {
+  background-color: #a6b91a;
+}
+.Rock {
+  background-color: #b6a136;
+}
+.Ghost {
+  background-color: #735797;
+}
+.Dragon {
+  background-color: #6f35fc;
+}
+.Dark {
+  background-color: #705746;
+}
+.Steel {
+  background-color: #b7b7ce;
+}
+.Fairy {
+  background-color: #d685ad;
 }
